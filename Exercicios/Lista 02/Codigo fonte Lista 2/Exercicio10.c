@@ -1,18 +1,12 @@
-//Faça um algoritmo em português estruturado que leia três valores numéricos e
-//encontre qual o menor deles, mostrando-o no final.Faça o chinesinho ao lado do seu algoritmo.
-
 //Bibliotecas
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
 
-//Funçao principal
-int main(){
+int main(void){
 	
-//Declaraçao as variaveis
 	int valor1, valor2, valor3;
 	
-//Entrada e saida dos dados
     setlocale(LC_ALL, "Portuguese");
 	printf("Informe o primeiro valor:\n");
 	scanf("%d", &valor1);
@@ -30,7 +24,5 @@ int main(){
 	else if((valor3 < valor1) && (valor3 < valor2))
 	   printf("\nO menor valor é: %d\n\n", valor3);      	
 	
-//Pause do programa e retorno a funçao	
-	system("pause");
 	return 0;
 }
