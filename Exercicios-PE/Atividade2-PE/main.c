@@ -9,12 +9,12 @@ int main(void) {
 	
 	int numero = 0;
 	do {
-          printf("Informe um número qualquer de 1 até 500: ");
+          printf("Informe um nÃºmero qualquer de 1 atÃ© 500: ");
           fflush(stdin);
           scanf("%d", &numero);	
           
           if(numero < 1 || numero > 500) {
-               printf("\nInforme o número novamente por favor: ");
+               printf("\nInforme o nÃºmero novamente por favor: ");
           }
           	   	   		
 	}while(numero < 1 || numero > 500);
@@ -34,17 +34,17 @@ int main(void) {
               printf("\n|BINGO|    ");
           }
           else if(count % 4 == 0) {
-               printf("\n|M4|       ");
+               printf("\n|M4|\t");
           }
           else if(count % 5 == 0){
-               printf("\n|M5|       ");
+               printf("\n|M5|\t");
           }
           else {
                if(count < 10) {
-                   printf("\n|0%d|       ", count); 
+                   printf("\n|0%d|\t", count); 
                }
                else {
-                   printf("\n|%d|       ", count); 
+                   printf("\n|%d|\t", count); 
                }  
           }
           
