@@ -31,7 +31,7 @@ int main(void) {
           }
          
           if((count % 4 == 0) && (count % 5 == 0)){
-              printf("\n|BINGO|    ");
+              printf("\n|BINGO|\t");
           }
           else if(count % 4 == 0) {
                printf("\n|M4|\t");
