@@ -4,7 +4,6 @@
 
 int main(void) {
 	setlocale(LC_ALL, "Portuguese");
-	
 	printf("Atividade do Bingo!\n\n");
 	
 	int numero = 0;
@@ -20,12 +19,9 @@ int main(void) {
 	}while(numero < 1 || numero > 500);
 	
 	int count = 0, count_menos, valorCount;
-	
 	valorCount = numero + 1;
 	count_menos = valorCount;
-	
 	for(count = 1; count <= numero; count++) { 
-	
 	     if(count_menos >= 1) {
 	         count_menos--;
           }
